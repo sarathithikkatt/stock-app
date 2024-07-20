@@ -1,0 +1,8 @@
+frontend:
+  build:
+    context: .
+    dockerfile: stock-app/Dockerfile
+  depends_on:
+    - mongo
+  ports:
+    - '3000:80'
